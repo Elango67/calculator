@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="styl.css">
+    <script src="new.js"></script>
+</head>
+<body class="b">
+      <div class="d1">
+        <input type="text" id="num">   
+      <div class="d3">
+          <span><input type="button" value="AC" id="b" onclick="form_reset()"></span>
+          <span><input type="button" value="del" id="b" onclick="form_reset()"></span>
+          <span><input type="button" value="%" id="b1" onclick="update('%')"></span>
+          <span><input type="button" value="/" id="b1" onclick="update('/')"></span>
+      </div>
+      <div class="d3">
+        <span><input type="button" value="7" id="b1" onclick="update(7)"></span>
+        <span><input type="button" value="8" id="b1" onclick="update(8)"></span>
+        <span><input type="button" value="9" id="b1" onclick="update(9)"></span>
+        <span><input type="button" value="*" id="b1" onclick="update('*')"></span>
+    </div>
+    <div class="d3">
+        <span><input type="button" value="4" id="b1" onclick="update(4)"></span>
+        <span><input type="button" value="5" id="b1" onclick="update(5)"></span>
+        <span><input type="button" value="6" id="b1" onclick="update(6)"></span>
+        <span><input type="button" value="-" id="b1" onclick="update('-')"></span>
+    </div>
+    <div class="d3">
+        <span><input type="button" value="1" id="b1" onclick="update(1)"></span>
+        <span><input type="button" value="2" id="b1" onclick="update(2)"></span>
+        <span><input type="button" value="3" id="b1" onclick="update(3)"></span>
+        <span><input type="button" value="+" id="b1" onclick="update('+')"></span>
+    </div>
+    <div class="d3">
+        <span><input type="button" value="00" id="b" onclick="update(00)"></span>
+        <span><input type="button" value="0" id="b1" onclick="update(0)"></span>
+        <span><input type="button" value="." id="b1" onclick="update('.')"></span>
+        <span><input type="button" value="=" id="b1" onclick="result()"></span>
+    </div>
+      </div>
+</body>
+</html>
